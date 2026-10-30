@@ -244,72 +244,13 @@
                 <div class="relative my-6 group">
                     <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyber-electric via-cyber-neonPurple to-cyber-pink blur-md opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-spin-slow"></div>
                     <div class="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden p-1 bg-cyber-dark border-2 border-cyber-electric/50 shadow-neon-cyan">
-                        <!-- Stylized SVG Portrait generated based on Niriksha's photograph -->
-                        <svg viewBox="0 0 200 200" class="w-full h-full rounded-full bg-cyber-navy">
-                            <defs>
-                                <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" stop-color="#1e1035"/>
-                                    <stop offset="100%" stop-color="#05070f"/>
-                                </radialGradient>
-                                <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#a5f3fc"/>
-                                    <stop offset="100%" stop-color="#38bdf8"/>
-                                </linearGradient>
-                                <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                    <stop offset="0%" stop-color="#1f2937"/>
-                                    <stop offset="100%" stop-color="#0f172a"/>
-                                </linearGradient>
-                                <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#fcd34d"/>
-                                    <stop offset="100%" stop-color="#f59e0b"/>
-                                </linearGradient>
-                            </defs>
-                            <rect width="200" height="200" fill="url(#bgGlow)"/>
-                            <!-- Cyber Grid lines on Avatar backdrop -->
-                            <path d="M0 40 L200 40 M0 80 L200 80 M0 120 L200 120 M0 160 L200 160" stroke="rgba(0,240,255,0.08)" stroke-width="1"/>
-                            <path d="M40 0 L40 200 M80 0 L80 200 M120 0 L120 200 M160 0 L160 200" stroke="rgba(0,240,255,0.08)" stroke-width="1"/>
-                            
-                            <!-- Long Wavy Hair Back -->
-                            <path d="M50 80 C 40 120, 30 160, 45 200 L 155 200 C 170 160, 160 120, 150 80 Z" fill="url(#hairGrad)"/>
-                            
-                            <!-- Neck & Shoulders -->
-                            <path d="M85 130 L115 130 L120 160 L80 160 Z" fill="#f3a87c"/>
-                            
-                            <!-- Light Blue Shirt with Collar -->
-                            <path d="M45 160 Q100 145 155 160 L165 200 L35 200 Z" fill="url(#shirtGrad)"/>
-                            <!-- Shirt Collar detail -->
-                            <path d="M85 160 L100 180 L115 160 L100 165 Z" fill="#ffffff" opacity="0.9"/>
-
-                            <!-- Face Oval -->
-                            <ellipse cx="100" cy="100" rx="36" ry="44" fill="#f8c19a"/>
-                            
-                            <!-- Long Wavy Dark Hair Front Framing -->
-                            <path d="M64 100 C 58 70, 70 45, 100 45 C 130 45, 142 70, 136 100 C 133 80, 125 55, 100 55 C 75 55, 67 80, 64 100 Z" fill="url(#hairGrad)"/>
-                            <path d="M64 85 C 60 110, 52 135, 60 165 C 66 140, 70 115, 67 90 Z" fill="url(#hairGrad)"/>
-                            <path d="M136 85 C 140 110, 148 135, 140 165 C 134 140, 130 115, 133 90 Z" fill="url(#hairGrad)"/>
-
-                            <!-- Eyebrows -->
-                            <path d="M76 86 Q86 82 93 87" stroke="#2d1a0e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                            <path d="M107 87 Q114 82 124 86" stroke="#2d1a0e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-
-                            <!-- Expressive Smiling Eyes -->
-                            <ellipse cx="85" cy="95" rx="5" ry="4" fill="#2d1a0e"/>
-                            <circle cx="86.5" cy="93.5" r="1.5" fill="#ffffff"/>
-                            <ellipse cx="115" cy="95" rx="5" ry="4" fill="#2d1a0e"/>
-                            <circle cx="116.5" cy="93.5" r="1.5" fill="#ffffff"/>
-
-                            <!-- Nose -->
-                            <path d="M100 96 L98 106 L102 106" stroke="#d9825b" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-
-                            <!-- Warm Bright Smile -->
-                            <path d="M84 116 Q100 130 116 116 Q100 122 84 116 Z" fill="#ffffff" stroke="#c0392b" stroke-width="1"/>
-                            
-                            <!-- Bindi Detail -->
-                            <circle cx="100" cy="82" r="1.2" fill="#e74c3c"/>
-
-                            <!-- Tech HUD Ring Overlay -->
-                            <circle cx="100" cy="100" r="95" stroke="#00f0ff" stroke-width="1" stroke-dasharray="8 6" fill="none" opacity="0.4"/>
-                        </svg>
+                        <!-- Profile Image Tag targeting pic.jpg (fallback handling for pic.png / pic.jpeg) -->
+                        <img 
+                            src="pic.jpg" 
+                            alt="NIRIKSHA" 
+                            class="w-full h-full object-cover rounded-full"
+                            onerror="if (this.src.endsWith('pic.jpg')) { this.src = 'pic.png'; } else if (this.src.endsWith('pic.png')) { this.src = 'pic.jpeg'; } else if (this.src.endsWith('pic.jpeg')) { this.src = 'pic.webp'; }"
+                        />
                     </div>
                     <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-cyber-purple/90 border border-cyber-electric text-[10px] font-mono text-cyber-electric shadow-neon-cyan">
                         SYSTEM ONLINE
